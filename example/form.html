@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<ul class="layui-nav" lay-filter="">
+    <li class="layui-nav-item"><a href="login.html">登录页</a></li>
+    <li class="layui-nav-item layui-this"><a href="form.html">表单页</a></li>
+    <li class="layui-nav-item"><a href="table.html">表格页</a></li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">####</a>
+        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+            <dd><a href="">####</a></dd>
+            <dd><a href="">####</a></dd>
+            <dd><a href="">####</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item"><a href="">####</a></li>
+</ul>
+<ul class="layui-nav layui-nav-tree" lay-filter="test">
+    <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+    <li class="layui-nav-item layui-nav-itemed">
+        <a href="javascript:;">默认展开</a>
+        <dl class="layui-nav-child">
+            <dd><a href="javascript:;">选项1</a></dd>
+            <dd><a href="javascript:;">选项2</a></dd>
+            <dd><a href="">跳转</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">解决方案</a>
+        <dl class="layui-nav-child">
+            <dd><a href="">移动模块</a></dd>
+            <dd><a href="">后台模版</a></dd>
+            <dd><a href="">电商平台</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item"><a href="">产品</a></li>
+    <li class="layui-nav-item"><a href="">大数据</a></li>
+</ul>
+<span class="layui-breadcrumb" lay-separator="-">
+  <a href="">首页</a>
+  <a href="">国际新闻</a>
+  <a href="">亚太地区</a>
+  <a><cite>正文</cite></a>
+</span>
+<script src="../layui/layui.js"></script>
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function(){
+        var element = layui.element();
+
+        //…
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+<ul class="layui-nav" lay-filter="">
+    <li class="layui-nav-item"><a href="login.html">登录页</a></li>
+    <li class="layui-nav-item"><a href="form.html">表单页</a></li>
+    <li class="layui-nav-item layui-this"><a href="table.html">表格页</a></li>
+    <li class="layui-nav-item">
+        <a href="javascript:;">####</a>
+        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+            <dd><a href="">####</a></dd>
+            <dd><a href="">####</a></dd>
+            <dd><a href="">####</a></dd>
+        </dl>
+    </li>
+    <li class="layui-nav-item"><a href="">####</a></li>
+</ul>
+
+
+<script src="../layui/layui.js"></script>
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function(){
+        var element = layui.element();
+
+        //…
+    });
+</script>
+</body>
+</html>

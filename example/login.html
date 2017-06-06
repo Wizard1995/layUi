@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="body">
+
+<div class="lg-login-div">
+    <div class="site-title">
+      <span>登录</span>
+    </div>
+    <form class="layui-form" action="" method="post">
+        <div class="layui-form-item">
+            <label class="layui-form-label">账号</label>
+            <div class="layui-input-block">
+                <input type="text" name="username" lay-verify="required" autocomplete="off" placeholder="请输入用户名"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input type="password" name="password" lay-verify="required" placeholder="请输入密码" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <button class="layui-btn" lay-submit="" lay-filter="submit">登录</button>
+        </div>
+    </form>
+</div>
+
+
+<script src="../layui/layui.js"></script>
+
+<script>
+    layui.use(['form'], function () {
+        var form = layui.form()
+            , layer = layui.layer;
+
+        //监听提交
+        form.on('submit(submit)', function (data) {
+            var username = data.field.username;
+            var password = data.field.password;
+            var data = JSON.stringify(data.field);
+            layer.alert(data, {
+                title: '最终的提交信息'
+            })
+            if(username == 'admin' && password == '123456')
+            {
+                alert('登录成功');
+                window.location.href='table.html';
+            }
+            return false;
+        });
+
+
+    });
+</script>
+</body>
+</html>

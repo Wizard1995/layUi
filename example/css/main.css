@@ -1,0 +1,16 @@
+
+.body{
+    background-color: #1febff;
+}
+.lg-login-div{
+    text-align: center;
+    width:425px;
+    margin: 250px auto 0;
+}
+.site-title{
+    margin: 10px;
+}
+.site-title span{
+    font-size: 30px;
+    color: #009688;
+}
