@@ -6,32 +6,166 @@
     <link rel="stylesheet" href="../layui/css/layui.css" media="all">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
+<body class="layui-layout-admin">
+<div class="layui-header  header-menu">
+    <div class="logo layui-inline">
+        <div>XXX后台</div>
+    </div>
+    <div class="layui-inline layui-menu posb">
+        <ul class="layui-nav layui-top-menu" lay-filter="" id="menu">
+            <li class="layui-nav-item"><a href="login.html">登录页</a></li>
+            <li class="layui-nav-item"><a href="form.html">表单页</a></li>
+            <li class="layui-nav-item layui-this"><a href="table.html">表格页</a></li>
+            <li class="layui-nav-item"><a href="table.html">表格页</a></li>
+            <li class="layui-nav-item"><a href="">####</a></li>
+        </ul>
+    </div>
+    <div class="layui-inline layui-right-menu posb">
+        <ul class="layui-nav" lay-filter="">
+            <li class="layui-nav-item ">
+                <a href="javascript:;">个人中心</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">个人资料</a></dd>
+                    <dd><a href="javascript:;">修改密码</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a class="onFullScreen" id="FullScreen">退出</a></li>
+            <li class="layui-nav-item"><a href="login.html">退出</a></li>
+        </ul>
+    </div>
+</div>
 
-<ul class="layui-nav" lay-filter="">
-    <li class="layui-nav-item"><a href="login.html">登录页</a></li>
-    <li class="layui-nav-item"><a href="form.html">表单页</a></li>
-    <li class="layui-nav-item layui-this"><a href="table.html">表格页</a></li>
-    <li class="layui-nav-item">
-        <a href="javascript:;">####</a>
-        <dl class="layui-nav-child"> <!-- 二级菜单 -->
-            <dd><a href="">####</a></dd>
-            <dd><a href="">####</a></dd>
-            <dd><a href="">####</a></dd>
-        </dl>
-    </li>
-    <li class="layui-nav-item"><a href="">####</a></li>
-</ul>
+<div class="layui-left-menu layui-side layui-bg-black">
+    <div class="layui-user">
+        <img src="./img/user.jpg" alt="">
+        <p>欢迎登陆 XXX</p>
+    </div>
+    <div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+            <li class="layui-nav-item ">
+                <a href="javascript:;">用户管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">用户列表</a></dd>
+                    <dd><a href="javascript:;">用户审核</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">解决方案</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="">后台模版</a></dd>
+                    <dd><a href="">电商平台</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">产品</a></li>
+            <li class="layui-nav-item"><a href="">大数据</a></li>
+        </ul>
+    </div>
 
+</div>
 
+<div class="layui-body">
+    <div class="breadcrumb">
+        <span class="layui-breadcrumb" lay-separator="-">
+          <a href="">首页</a>
+          <a href="">表格页</a>
+          <a><cite>正文</cite></a>
+        </span>
+    </div>
+    <div class="layui-content">
+        <table class="layui-table" lay-even lay-skin="line">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>时间</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>贤心</td>
+                <td>2016-11-29</td>
+                <td>人生就像是一场修行</td>
+                <td>
+                    <a href="./modal/table.html" class="model">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>贤心</td>
+                <td>2016-11-29</td>
+                <td>人生就像是一场修行</td>
+                <td>
+                    <a href="./modal/table.html" class="model">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>贤心</td>
+                <td>2016-11-29</td>
+                <td>人生就像是一场修行</td>
+                <td>
+                    <a href="./modal/table.html" class="model">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>贤心</td>
+                <td>2016-11-29</td>
+                <td>人生就像是一场修行</td>
+                <td>
+                    <a href="./modal/table.html" class="model">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>贤心</td>
+                <td>2016-11-29</td>
+                <td>人生就像是一场修行</td>
+                <td>
+                    <a href="./modal/table.html" class="model">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>贤心</td>
+                <td>2016-11-29</td>
+                <td>人生就像是一场修行</td>
+                <td>
+                    <a href="./modal/table.html" class="model">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <div id="page"></div>
+</div>
+
+<div class="layui-footer footer">
+    <p>2016 © <a href="">中科佰融</a></p>
+</div>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <script src="../layui/layui.js"></script>
+<script src="./js/app.js"></script>
 <script>
-    //注意：导航 依赖 element 模块，否则无法进行功能性操作
-    layui.use('element', function(){
-        var element = layui.element();
 
-        //…
-    });
 </script>
 </body>
 </html>

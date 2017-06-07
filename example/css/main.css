@@ -1,16 +1,105 @@
 
-.body{
+.body {
     background-color: #1febff;
 }
-.lg-login-div{
+
+.layui-login-div {
     text-align: center;
-    width:425px;
+    width: 425px;
     margin: 250px auto 0;
 }
-.site-title{
+
+.site-title {
     margin: 10px;
 }
-.site-title span{
+
+.site-title span {
     font-size: 30px;
     color: #009688;
+}
+
+.header-menu {
+    height: 60px;
+    /*border-bottom: 5px solid #1AA094;*/
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    background-color: #393D49;
+}
+
+.posb {
+    position: absolute;
+}
+
+.logo {
+    width: 200px;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.logo div {
+    color: #fff;
+    font-size: 30px;
+    line-height: 65px;
+}
+
+.layui-right-menu {
+    display: block;
+    vertical-align: top;
+    height: 65px;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+.layui-user img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 4px solid #44576B;
+    margin: auto;
+}
+
+.layui-user p {
+    display: block;
+    width: 100%;
+    height: 25px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.breadcrumb {
+    margin: 20px 30px;
+}
+
+.layui-layout-admin .footer {
+    height: auto;
+    padding: 15px 0;
+    line-height: 26px;
+    text-align: center;
+    background-color: #eee;
+    color: #666;
+    font-weight: 300;
+    min-width: 1000px;
+}
+
+.layui-content {
+    margin: 20px 30px;
+}
+
+.model:hover {
+    color: #F7B824;
+}
+
+#page{
+    text-align: center;
 }
