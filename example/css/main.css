@@ -1,6 +1,6 @@
 
 .body {
-    background-color: #1febff;
+    background-color: #ebebeb;
 }
 
 .layui-login-div {
@@ -20,7 +20,6 @@
 
 .header-menu {
     height: 60px;
-    /*border-bottom: 5px solid #1AA094;*/
     top: 0px;
     left: 0px;
     z-index: 1001;
@@ -96,10 +95,14 @@
     margin: 20px 30px;
 }
 
-.model:hover {
+.model:hover ,.ajax-delete:hover{
     color: #F7B824;
 }
 
 #page{
     text-align: center;
+}
+
+.layui-serch{
+    margin: 30px;
 }

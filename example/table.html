@@ -29,8 +29,7 @@
                     <dd><a href="javascript:;">修改密码</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a class="onFullScreen" id="FullScreen">退出</a></li>
-            <li class="layui-nav-item"><a href="login.html">退出</a></li>
+            <li class="layui-nav-item"><a href="login.html" class="logout" data-title="退出" data-msg="是否退出系统？">退出</a></li>
         </ul>
     </div>
 </div>
@@ -73,6 +72,23 @@
           <a><cite>正文</cite></a>
         </span>
     </div>
+    <div class="layui-serch">
+        <form action="" method="post" class="layui-form">
+            <div class="layui-form-pane" style="margin-top: 15px;">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">范围选择</label>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" name="start_time" placeholder="开始日" id="LAY_demorange_s">
+                    </div>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" name="end_time" placeholder="截止日" id="LAY_demorange_e">
+                    </div>
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">筛选</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
     <div class="layui-content">
         <table class="layui-table" lay-even lay-skin="line">
             <colgroup>
@@ -96,8 +112,8 @@
                 <td>2016-11-29</td>
                 <td>人生就像是一场修行</td>
                 <td>
-                    <a href="./modal/table.html" class="model">修改</a>
-                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                    <a href="./modal/table.html" class="model" data-title="标题11">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete" data-msg="确定删除" data-title="标题22">删除</a>
                 </td>
             </tr>
             <tr>
@@ -106,8 +122,8 @@
                 <td>2016-11-29</td>
                 <td>人生就像是一场修行</td>
                 <td>
-                    <a href="./modal/table.html" class="model">修改</a>
-                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                    <a href="./modal/table.html" class="model" data-title="标题">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete" data-msg="确定删除" data-title="标题">删除</a>
                 </td>
             </tr>
             <tr>
@@ -116,8 +132,8 @@
                 <td>2016-11-29</td>
                 <td>人生就像是一场修行</td>
                 <td>
-                    <a href="./modal/table.html" class="model">修改</a>
-                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                    <a href="./modal/table.html" class="model" data-title="标题">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete" data-msg="确定删除" data-title="标题">删除</a>
                 </td>
             </tr>
             <tr>
@@ -126,8 +142,8 @@
                 <td>2016-11-29</td>
                 <td>人生就像是一场修行</td>
                 <td>
-                    <a href="./modal/table.html" class="model">修改</a>
-                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                    <a href="./modal/table.html" class="model" data-title="标题">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete" data-msg="确定删除" data-title="标题">删除</a>
                 </td>
             </tr>
             <tr>
@@ -136,8 +152,8 @@
                 <td>2016-11-29</td>
                 <td>人生就像是一场修行</td>
                 <td>
-                    <a href="./modal/table.html" class="model">修改</a>
-                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                    <a href="./modal/table.html" class="model" data-title="标题">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete" data-msg="确定删除" data-title="标题">删除</a>
                 </td>
             </tr>
             <tr>
@@ -146,8 +162,8 @@
                 <td>2016-11-29</td>
                 <td>人生就像是一场修行</td>
                 <td>
-                    <a href="./modal/table.html" class="model">修改</a>
-                    <a href="./modal/table.html" class="ajax-delete">删除</a>
+                    <a href="./modal/table.html" class="model" data-title="标题">修改</a>
+                    <a href="./modal/table.html" class="ajax-delete" data-msg="确定删除" data-title="标题">删除</a>
                 </td>
             </tr>
 
@@ -165,6 +181,7 @@
 <script src="../layui/layui.js"></script>
 <script src="./js/app.js"></script>
 <script>
+
 
 </script>
 </body>
